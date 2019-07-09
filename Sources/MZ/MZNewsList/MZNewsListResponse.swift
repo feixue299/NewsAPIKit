@@ -18,4 +18,4 @@ public struct MZNews: Codable {
     public let videoList: String?
 }
 
-public typealias MZNewsListResponse = MZResponse<MZNews>
+public typealias MZNewsListResponse = MZResponse<[MZNews]>

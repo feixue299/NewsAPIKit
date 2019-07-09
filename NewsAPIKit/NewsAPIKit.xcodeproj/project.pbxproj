@@ -14,6 +14,9 @@
 		380C71FC22D47970005BF8A7 /* MZResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C71FB22D47970005BF8A7 /* MZResponse.swift */; };
 		380C71FF22D480F1005BF8A7 /* MZServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C71FE22D480F1005BF8A7 /* MZServer.swift */; };
 		380C720122D486F6005BF8A7 /* MZServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C720022D486F6005BF8A7 /* MZServerTests.swift */; };
+		380C720422D48DCD005BF8A7 /* MZNewsDetailsServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C720322D48DCD005BF8A7 /* MZNewsDetailsServer.swift */; };
+		380C720622D48DF7005BF8A7 /* MZNewsDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C720522D48DF7005BF8A7 /* MZNewsDetailsResponse.swift */; };
+		380C720822D48E6A005BF8A7 /* MZNewsDetailsServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C720722D48E6A005BF8A7 /* MZNewsDetailsServerTests.swift */; };
 		3810165922D42C0300E0522C /* NewsAPIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3810165722D42C0300E0522C /* NewsAPIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3810166622D42E2000E0522C /* NewsAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3810166522D42E2000E0522C /* NewsAPIKitTests.swift */; };
 		3810166822D42E2000E0522C /* NewsAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3810165422D42C0300E0522C /* NewsAPIKit.framework */; };
@@ -45,6 +48,9 @@
 		380C71FB22D47970005BF8A7 /* MZResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZResponse.swift; sourceTree = "<group>"; };
 		380C71FE22D480F1005BF8A7 /* MZServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZServer.swift; sourceTree = "<group>"; };
 		380C720022D486F6005BF8A7 /* MZServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZServerTests.swift; sourceTree = "<group>"; };
+		380C720322D48DCD005BF8A7 /* MZNewsDetailsServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNewsDetailsServer.swift; sourceTree = "<group>"; };
+		380C720522D48DF7005BF8A7 /* MZNewsDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNewsDetailsResponse.swift; sourceTree = "<group>"; };
+		380C720722D48E6A005BF8A7 /* MZNewsDetailsServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNewsDetailsServerTests.swift; sourceTree = "<group>"; };
 		3810165422D42C0300E0522C /* NewsAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewsAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3810165722D42C0300E0522C /* NewsAPIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsAPIKit.h; sourceTree = "<group>"; };
 		3810165822D42C0300E0522C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,8 +120,20 @@
 			children = (
 				380C71FB22D47970005BF8A7 /* MZResponse.swift */,
 				380C71FE22D480F1005BF8A7 /* MZServer.swift */,
+				380C71F422D476E8005BF8A7 /* MZNewsList */,
+				380C71EF22D46F93005BF8A7 /* MZNewsTypes */,
+				380C720222D48D53005BF8A7 /* MZNewsDetails */,
 			);
 			path = MZ;
+			sourceTree = "<group>";
+		};
+		380C720222D48D53005BF8A7 /* MZNewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				380C720322D48DCD005BF8A7 /* MZNewsDetailsServer.swift */,
+				380C720522D48DF7005BF8A7 /* MZNewsDetailsResponse.swift */,
+			);
+			path = MZNewsDetails;
 			sourceTree = "<group>";
 		};
 		3810164A22D42C0300E0522C = {
@@ -155,6 +173,7 @@
 				380C720022D486F6005BF8A7 /* MZServerTests.swift */,
 				3810167922D46CDD00E0522C /* MZNewsTypeServerTests.swift */,
 				380C71F922D47886005BF8A7 /* MZNewsListServerTests.swift */,
+				380C720722D48E6A005BF8A7 /* MZNewsDetailsServerTests.swift */,
 				3810166722D42E2000E0522C /* Info.plist */,
 			);
 			path = NewsAPIKitTests;
@@ -166,8 +185,6 @@
 				3810166F22D42ED900E0522C /* NewsAPIKit.swift */,
 				3810167122D4356D00E0522C /* NewsAPIServer.swift */,
 				380C71FD22D480DD005BF8A7 /* MZ */,
-				380C71F422D476E8005BF8A7 /* MZNewsList */,
-				380C71EF22D46F93005BF8A7 /* MZNewsTypes */,
 			);
 			name = Sources;
 			path = ../../Sources;
@@ -366,8 +383,10 @@
 				380C71F322D470E0005BF8A7 /* MZNewsTypesResponse.swift in Sources */,
 				380C71F622D4774C005BF8A7 /* MZNewsListServer.swift in Sources */,
 				3810167022D42ED900E0522C /* NewsAPIKit.swift in Sources */,
+				380C720422D48DCD005BF8A7 /* MZNewsDetailsServer.swift in Sources */,
 				3810167822D46BEB00E0522C /* MZNewsTypesServer.swift in Sources */,
 				380C71FF22D480F1005BF8A7 /* MZServer.swift in Sources */,
+				380C720622D48DF7005BF8A7 /* MZNewsDetailsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +396,7 @@
 			files = (
 				3810167A22D46CDD00E0522C /* MZNewsTypeServerTests.swift in Sources */,
 				380C71FA22D47886005BF8A7 /* MZNewsListServerTests.swift in Sources */,
+				380C720822D48E6A005BF8A7 /* MZNewsDetailsServerTests.swift in Sources */,
 				3810166622D42E2000E0522C /* NewsAPIKitTests.swift in Sources */,
 				380C720122D486F6005BF8A7 /* MZServerTests.swift in Sources */,
 			);

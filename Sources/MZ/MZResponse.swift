@@ -10,6 +10,6 @@ import Foundation
 
 public struct MZResponse<DataType: Codable>: Codable {
     public let code: Int
-    public let data: [DataType]
+    public let data: DataType
     public let msg: String
 }

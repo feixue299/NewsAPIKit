@@ -19,7 +19,7 @@ class MZNewsTypeServerTests: MZServerTests<MZNewsTypesResponse> {
         
     }
     
-    func testData() {
+    func testRequest() {
         testServer(MZNewsTypesServer(target: .mzNewsTypes))
     }
 

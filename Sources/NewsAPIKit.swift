@@ -11,12 +11,13 @@ import Moya
 public enum NewsAPIKit {
     case mzNewsTypes
     case mzNewsList(typeid: Int, page: Int)
+    case mzNewsDetails(newsid: String)
 }
 
 extension NewsAPIKit: TargetType {
     public var baseURL: URL {
         switch self {
-        case .mzNewsTypes, .mzNewsList:
+        case .mzNewsTypes, .mzNewsList, .mzNewsDetails:
             return URL(string: "https://www.mxnzp.com/api")!
         }
     }
@@ -27,6 +28,8 @@ extension NewsAPIKit: TargetType {
             return "/news/types"
         case .mzNewsList:
             return "/news/list"
+        case .mzNewsDetails:
+            return "/news/details"
         }
     }
     
@@ -44,6 +47,8 @@ extension NewsAPIKit: TargetType {
             return .requestPlain
         case .mzNewsList(let typeid, let page):
             return .requestParameters(parameters: ["typeId": typeid, "page": page], encoding: URLEncoding.queryString)
+        case .mzNewsDetails(let newsid):
+            return .requestParameters(parameters: ["newsId": newsid], encoding: URLEncoding.queryString)
         }
     }
     

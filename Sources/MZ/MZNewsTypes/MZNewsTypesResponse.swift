@@ -13,4 +13,4 @@ public struct MZNewsType: Codable {
     public let typeName: String
 }
 
-public typealias MZNewsTypesResponse = MZResponse<MZNewsType>
+public typealias MZNewsTypesResponse = MZResponse<[MZNewsType]>

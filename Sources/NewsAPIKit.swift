@@ -8,33 +8,26 @@
 
 import Moya
 
-public enum JHNewsType: String {
-    case top
-    case shehui
-    case guonei
-    case guoji
-    case yule
-    case tiyu
-    case junshi
-    case keji
-    case caijing
-    case shishang
-}
-
 public enum NewsAPIKit {
-    case jhNews(key: String, type: JHNewsType)
+    case mzNewsTypes
+    case mzNewsList(typeid: Int, page: Int)
 }
 
 extension NewsAPIKit: TargetType {
     public var baseURL: URL {
         switch self {
-        case .jhNews(let key, let type):
-            return URL(string: "http://v.juhe.cn/toutiao/index?type=\(type.rawValue)&key=\(key)")!
+        case .mzNewsTypes, .mzNewsList:
+            return URL(string: "https://www.mxnzp.com/api")!
         }
     }
     
     public var path: String {
-        return ""
+        switch self {
+        case .mzNewsTypes:
+            return "/news/types"
+        case .mzNewsList:
+            return "/news/list"
+        }
     }
     
     public var method: Moya.Method {
@@ -46,7 +39,12 @@ extension NewsAPIKit: TargetType {
     }
     
     public var task: Task {
-        return .requestPlain
+        switch self {
+        case .mzNewsTypes:
+            return .requestPlain
+        case .mzNewsList(let typeid, let page):
+            return .requestParameters(parameters: ["typeId": typeid, "page": page], encoding: URLEncoding.queryString)
+        }
     }
     
     public var headers: [String : String]? {

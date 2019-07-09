@@ -1,7 +1,16 @@
 workspace 'NewsAPIKit.xcworkspace'
 
 platform :ios, '8.0'
+use_frameworks!
+
+def newsAPIKit_pods
+  pod 'Moya'
+end
 
 target 'NewsAPIKit' do
-	pod 'Moya'
+  newsAPIKit_pods
+end
+
+target 'NewsAPIKitTests' do
+  newsAPIKit_pods
 end

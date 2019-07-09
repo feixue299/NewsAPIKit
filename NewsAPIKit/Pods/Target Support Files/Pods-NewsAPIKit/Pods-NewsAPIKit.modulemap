@@ -1,4 +1,4 @@
-module Pods_NewsAPIKit {
+framework module Pods_NewsAPIKit {
   umbrella header "Pods-NewsAPIKit-umbrella.h"
 
   export *

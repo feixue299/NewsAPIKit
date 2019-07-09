@@ -1,0 +1,6 @@
+module Pods_NewsAPIKit {
+  umbrella header "Pods-NewsAPIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

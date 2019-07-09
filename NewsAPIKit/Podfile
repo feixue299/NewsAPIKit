@@ -1,0 +1,7 @@
+workspace 'NewsAPIKit.xcworkspace'
+
+platform :ios, '8.0'
+
+target 'NewsAPIKit' do
+	pod 'Moya'
+end

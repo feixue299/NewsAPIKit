@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |spec|
-  spec.name         = "NewsAPIKit"
+  spec.name         = "AWNewsAPIKit"
   spec.version      = "0.0.1"
   spec.summary      = "A NewsAPIKit"
   spec.homepage     = "https://github.com/feixue299/NewsAPIKit"

@@ -9,7 +9,7 @@
 import XCTest
 import NewsAPIKit
 
-class MZNewsListServerTests: XCTestCase {
+class MZNewsListServerTests: MZServerTests<MZNewsListResponse> {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,27 +20,7 @@ class MZNewsListServerTests: XCTestCase {
     }
 
     func testRequest() {
-        let expectation = self.expectation(description: "")
-        let server = MZNewsListServer(target: .mzNewsList(typeid: 509, page: 1))
-        server.request({ (result) in
-            switch result {
-            case .success(let response):
-                print("success:\(response)")
-                expectation.fulfill()
-            case .failure(let error):
-                print("error:\(error.localizedDescription)")
-            }
-        }, failure: { (moyaError) in
-            print("failure:\(moyaError.localizedDescription)")
-        })
-        waitForExpectations(timeout: 5, handler: nil)
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        testServer(MZNewsListServer(target: .mzNewsList(typeid: 509, page: 1)))
     }
 
 }

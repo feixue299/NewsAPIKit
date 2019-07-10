@@ -23,7 +23,7 @@ public struct MZServer<Response: Codable> {
         newsAPIServer.request(target) { (result) in
             switch result {
             case .success(let value):
-//                print("value:\(try! value.mapJSON())")
+                print("value:\(try! value.mapJSON())")
                 success?(RequestResult.init(catching: { () -> Response in
                     return try JSONDecoder().decode(Response.self, from: value.data)
                 }))

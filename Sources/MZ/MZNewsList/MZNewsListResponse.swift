@@ -15,7 +15,7 @@ public struct MZNews: Codable {
     public let postTime: String?
     public let source: String?
     public let title: String
-    public let videoList: String?
+    public let videoList: [String]?
 }
 
 public typealias MZNewsListResponse = MZResponse<[MZNews]>

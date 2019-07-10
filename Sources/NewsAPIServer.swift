@@ -11,8 +11,6 @@ import Moya
 
 public struct NewsAPIServer {
     
-    public static let share = NewsAPIServer()
-    
     public init() { }
     
     public var provider = MoyaProvider<NewsAPIKit>()

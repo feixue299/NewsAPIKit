@@ -20,7 +20,7 @@ class MZNewsListServerTests: MZServerTests<MZNewsListResponse> {
     }
 
     func testRequest() {
-        testServer(MZNewsListServer(target: .mzNewsList(typeid: 517, page: 1)))
+        testServer(MZNewsListServer(target: .mzNewsList(typeid: 518, page: 1)))
     }
 
 }

@@ -10,7 +10,7 @@ import Foundation
 
 public struct MZNews: Codable {
     public let digest: String?
-    public let imgList: [String]
+    public let imgList: [String]?
     public let newsId: String
     public let postTime: String?
     public let source: String?

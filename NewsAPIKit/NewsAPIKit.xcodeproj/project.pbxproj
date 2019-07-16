@@ -12,7 +12,7 @@
 		380C71F822D477D2005BF8A7 /* MZNewsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C71F722D477D2005BF8A7 /* MZNewsListResponse.swift */; };
 		380C71FA22D47886005BF8A7 /* MZNewsListServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C71F922D47886005BF8A7 /* MZNewsListServerTests.swift */; };
 		380C71FC22D47970005BF8A7 /* MZResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C71FB22D47970005BF8A7 /* MZResponse.swift */; };
-		380C71FF22D480F1005BF8A7 /* MZServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C71FE22D480F1005BF8A7 /* MZServer.swift */; };
+		380C71FF22D480F1005BF8A7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C71FE22D480F1005BF8A7 /* Server.swift */; };
 		380C720122D486F6005BF8A7 /* MZServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C720022D486F6005BF8A7 /* MZServerTests.swift */; };
 		380C720422D48DCD005BF8A7 /* MZNewsDetailsServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C720322D48DCD005BF8A7 /* MZNewsDetailsServer.swift */; };
 		380C720622D48DF7005BF8A7 /* MZNewsDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C720522D48DF7005BF8A7 /* MZNewsDetailsResponse.swift */; };
@@ -46,7 +46,7 @@
 		380C71F722D477D2005BF8A7 /* MZNewsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNewsListResponse.swift; sourceTree = "<group>"; };
 		380C71F922D47886005BF8A7 /* MZNewsListServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNewsListServerTests.swift; sourceTree = "<group>"; };
 		380C71FB22D47970005BF8A7 /* MZResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZResponse.swift; sourceTree = "<group>"; };
-		380C71FE22D480F1005BF8A7 /* MZServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZServer.swift; sourceTree = "<group>"; };
+		380C71FE22D480F1005BF8A7 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		380C720022D486F6005BF8A7 /* MZServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZServerTests.swift; sourceTree = "<group>"; };
 		380C720322D48DCD005BF8A7 /* MZNewsDetailsServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNewsDetailsServer.swift; sourceTree = "<group>"; };
 		380C720522D48DF7005BF8A7 /* MZNewsDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNewsDetailsResponse.swift; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				380C71FB22D47970005BF8A7 /* MZResponse.swift */,
-				380C71FE22D480F1005BF8A7 /* MZServer.swift */,
 				380C71F422D476E8005BF8A7 /* MZNewsList */,
 				380C71EF22D46F93005BF8A7 /* MZNewsTypes */,
 				380C720222D48D53005BF8A7 /* MZNewsDetails */,
@@ -184,6 +183,7 @@
 			children = (
 				3810166F22D42ED900E0522C /* NewsAPIKit.swift */,
 				3810167122D4356D00E0522C /* NewsAPIServer.swift */,
+				380C71FE22D480F1005BF8A7 /* Server.swift */,
 				380C71FD22D480DD005BF8A7 /* MZ */,
 			);
 			name = Sources;
@@ -385,7 +385,7 @@
 				3810167022D42ED900E0522C /* NewsAPIKit.swift in Sources */,
 				380C720422D48DCD005BF8A7 /* MZNewsDetailsServer.swift in Sources */,
 				3810167822D46BEB00E0522C /* MZNewsTypesServer.swift in Sources */,
-				380C71FF22D480F1005BF8A7 /* MZServer.swift in Sources */,
+				380C71FF22D480F1005BF8A7 /* Server.swift in Sources */,
 				380C720622D48DF7005BF8A7 /* MZNewsDetailsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

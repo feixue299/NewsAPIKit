@@ -19,7 +19,7 @@ class MZServerTests<Response: Codable>: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testServer(_ server: MZServer<Response>) {
+    func testServer(_ server: Server<Response>) {
         let expectation = self.expectation(description: "")
         server.request({ (result) in
             switch result {

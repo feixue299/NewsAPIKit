@@ -10,14 +10,6 @@ import XCTest
 import NewsAPIKit
 
 class MZNewsTypeServerTests: MZServerTests<MZNewsTypesResponse> {
-
-    override func setUp() {
-        
-    }
-
-    override func tearDown() {
-        
-    }
     
     func testRequest() {
         testServer(MZNewsTypesServer(target: .mzNewsTypes))

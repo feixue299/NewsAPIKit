@@ -12,7 +12,7 @@ import NewsAPIKit
 class MZServerTests<Response: Codable>: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        APPInfo.shareInstance = APPInfo(appid: "tqarlcgcsuwqin8w", appSecret: "dUI1MzA1OS83andyM2lrdDZNYnhWUT09")
     }
 
     override func tearDown() {

@@ -4,7 +4,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 def newsAPIKit_pods
-  pod 'Moya'
+  pod 'Moya', "~>14.0.0"
 end
 
 target 'NewsAPIKit' do

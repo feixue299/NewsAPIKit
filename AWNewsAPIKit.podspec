@@ -18,5 +18,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/feixue299/NewsAPIKit.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources", "Sources/**/*.{swift}"
   spec.requires_arc = true
-  spec.dependency "Moya"
+  spec.dependency "Moya", "~>14.0.0"
 end
